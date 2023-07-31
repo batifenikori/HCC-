@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: ; */
+}
+
+#main-container .head-container {
+    width: 100%;
+    background: black;
+    color: #fff;
+}
+
+#main-container .head-container ul li a:hover {
+    color: rgb(59, 136, 28);
+
+}
+
+.head-container .first-part {
+    display: inline-flex;
+    gap: 5vh;
+    margin: 2vh 20vh;
+}
+
+
+#main-container .head-container .first-part img{
+    width: 6vh;
+    border-radius: 50vh;
+}
+
+#main-container .head-container .first-part h2 {
+    margin-top: 9px;
+}
+
+.head-container .second-part {
+    display: inline-flex;
+    position: relative;
+    top: -8pt;
+}
+
+.head-container .second-part ul {
+    display: flex;
+    gap: 3vh;
+}
+.head-container .second-part ul li {
+    list-style-type: none;
+}
+
+.head-container .second-part ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.head-container .third-part {
+    display: inline-flex;
+    position: relative;
+    top: -11pt;
+}
+
+.head-container .third-part ul {
+    display: flex;
+    gap: 3vh;
+}
+
+.head-container .third-part ul li {
+    list-style: none;
+    position: relative;
+    left: 15vh;
+}
+
+.head-container .third-part ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: mediumseagreen;
+    padding: 1vh 3vh;
+    border-radius: 1vh;
+    font-family: amita;
+}
+.head-container .third-part ul li .except {
+    background-color: yellowgreen;
+}
+
+/* #main-container #batife-container {
+    background: url(batife3.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    height: 55vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 1- vh;
+
+} */
+
+#main-container #batife-container {
+    background-color: rgb(216, 201, 201);
+    width: 40%;
+    padding: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    margin-top: 10vh;
+}
+
+#form {
+    height: 40vh;
+    width: 45%;
+    display: flex;
+    background-color: none;
+}
+
+#form form {
+    display: inline;
+}
+
+#form form label input,
+textarea {
+    background: rgb(34, 34, 34);
+    width: 100%;
+    color: black;
+    padding: 17px;
+    margin: 7px;
+    border: none;
+    border-radius: 40px;
+}
+
+#form form label textarea {
+    height: 100px;
+}
+
+#form form label input,
+textarea::placeholder {
+    font-family: yatra one;
+    color: rgb(113, 113, 113);
+    font-size: 13pt;
+}
+
+#form form label input,
+textarea:focus {
+    color: #fff;
+    font-family: tw cen mt;
+    font-size: 13pt;
+}
+
+#form form button {
+    background: rgb(192, 155, 110);
+    width: 200px;
+    padding: 5px;
+    border-radius: 40px;
+    border: none;
+    margin-left: 15px;
+    margin-top: 20pt;
+}
+
+#form form button {
+    color: white;
+    font-family: Amita;
+    font-size: 14pt;
+}

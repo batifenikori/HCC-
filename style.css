@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: ; */
+}
+
+#main-container .head-container {
+    width: 100%;
+    background: black;
+    color: #fff;
+}
+
+#main-container .head-container ul li a:hover {
+    color: rgb(59, 136, 28);
+
+}
+
+.head-container .first-part {
+    display: inline-flex;
+    gap: 5vh;
+    margin: 2vh 20vh;
+}
+
+
+#main-container .head-container .first-part img{
+    width: 6vh;
+    border-radius: 50vh;
+}
+
+#main-container .head-container .first-part h2 {
+    margin-top: 9px;
+}
+
+.head-container .second-part {
+    display: inline-flex;
+    position: relative;
+    top: -8pt;
+}
+
+.head-container .second-part ul {
+    display: flex;
+    gap: 3vh;
+}
+.head-container .second-part ul li {
+    list-style-type: none;
+}
+
+.head-container .second-part ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.head-container .third-part {
+    display: inline-flex;
+    position: relative;
+    top: -11pt;
+}
+
+.head-container .third-part ul {
+    display: flex;
+    gap: 3vh;
+}
+
+.head-container .third-part ul li {
+    list-style: none;
+    position: relative;
+    left: 15vh;
+}
+
+.head-container .third-part ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: mediumseagreen;
+    padding: 1vh 3vh;
+    border-radius: 1vh;
+    font-family: amita;
+}
+.head-container .third-part ul li .except {
+    background-color: yellowgreen;
+}
+
+#main-container #body-container {
+    background: url(batife3.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+
+#body-container {
+    display: flex;
+}
+
+#body-container .text-side {
+    width: 50%;
+    margin-top: 20%;
+    margin-left: 10vh;
+}
+
+#body-container .text-side .head {
+    color: #fff;
+    font-size: 25pt;
+    line-height: 4vh;
+    font-family: amita;
+}
+
+#body-container .text-side p {
+    font-size: 30pt;
+    line-height: 7vh;
+    color: #fff;
+    font-family: aladin;
+}
+
+#body-container .text-side span {
+    color: yellowgreen;
+}
+
+#body-container .text-side button {
+    background-color: yellowgreen;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 15pt;
+    margin-top: 5vh;
+    font-family: bahnschrift;
+    border: none;
+}
+
+#body-container .text-side .text-hand p {
+    font-size: 20pt;
+    line-height: 30vh;
+    color: #f9f9f9de;
+    font-family: amita;
+}
+
