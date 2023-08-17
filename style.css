@@ -1,142 +1,201 @@
-*{
-    margin: 0%;
-    padding: 0%;
+/* CSS Variable */
+:root {
+    --pimary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104);
+}
+
+html {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
 }
 
-body{
-    /* font-family: ; */
+body {
+    background-color: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
 }
 
-#main-container .head-container {
-    width: 100%;
-    background: black;
-    color: #fff;
-}
-
-#main-container .head-container ul li a:hover {
-    color: rgb(59, 136, 28);
-
-}
-
-.head-container .first-part {
-    display: inline-flex;
-    gap: 5vh;
-    margin: 2vh 20vh;
-}
-
-
-#main-container .head-container .first-part img{
-    width: 6vh;
-    border-radius: 50vh;
-}
-
-#main-container .head-container .first-part h2 {
-    margin-top: 9px;
-}
-
-.head-container .second-part {
-    display: inline-flex;
-    position: relative;
-    top: -8pt;
-}
-
-.head-container .second-part ul {
-    display: flex;
-    gap: 3vh;
-}
-.head-container .second-part ul li {
-    list-style-type: none;
-}
-
-.head-container .second-part ul li a{
+.btn {
+    background: var(--dark              );
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
     text-decoration: none;
-    color: #fff;
+    border: 0;
 }
 
-.head-container .third-part {
-    display: inline-flex;
-    position: relative;
-    top: -11pt;
+img {
+    max-width: 100%;
 }
 
-.head-container .third-part ul {
-    display: flex;
-    gap: 3vh;
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
 }
 
-.head-container .third-part ul li {
+/* Naigation */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
     list-style: none;
-    position: relative;
-    left: 15vh;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.head-container .third-part ul li a {
+.main-nav a {
+    background: var(--pimary);
+    display: block;
     text-decoration: none;
-    color: #fff;
-    background-color: mediumseagreen;
-    padding: 1vh 3vh;
-    border-radius: 1vh;
-    font-family: amita;
-}
-.head-container .third-part ul li .except {
-    background-color: yellowgreen;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
 }
 
-#main-container #body-container {
-    background: url(batife3.jpg);
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* Top Container */
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'showcase showcase top-box-a'
+      'showcase showcase top-box-b';
+}
+
+/* Showcase */
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(pic1.jpg);
     background-size: cover;
-    opacity: 0.9;
-}
-
-
-#body-container {
+    background-position: center;
+    padding: 3rem;
     display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
 }
 
-#body-container .text-side {
-    width: 50%;
-    margin-top: 20%;
-    margin-left: 10vh;
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
 }
 
-#body-container .text-side .head {
-    color: #fff;
-    font-size: 25pt;
-    line-height: 4vh;
-    font-family: amita;
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--light);
 }
 
-#body-container .text-side p {
-    font-size: 30pt;
-    line-height: 7vh;
-    color: #fff;
-    font-family: aladin;
+/* Top Box */
+.top-box {
+    background: var(--pimary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
 }
 
-#body-container .text-side span {
-    color: yellowgreen;
+.top-box .price {
+    font-size: 2.5rem;
 }
 
-#body-container .text-side button {
-    background-color: yellowgreen;
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    font-size: 15pt;
-    margin-top: 5vh;
-    font-family: bahnschrift;
-    border: none;
+.top-box-a {
+    grid-area: top-box-a;
 }
 
-#body-container .text-side .text-hand p {
-    font-size: 20pt;
-    line-height: 30vh;
-    color: #f9f9f9de;
-    font-family: amita;
+.top-box-b {
+    grid-area: top-box-b;
 }
 
+/* Boxes */
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+    background: var(--pimary);
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);  
+}
+
+/* Info */
+.info {
+    background: var(--pimary);
+    background: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+/* Portfolio */
+.portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    .top-container {
+        grid-template-areas:
+          'showcase showcase'
+          'top-box-a top-box-b';
+}
+
+.showcase h1 {
+    font-size: 2.5rem;
+}
+
+.main-nav ul {
+    grid-template-columns: 1fr;
+}
+
+.info {
+    grid-template-columns: 1fr;
+}
+
+.info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+ }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+      grid-template-areas:
+        'showcase'
+        'top-box-a'
+        'top-box-b'
+  }
+}
