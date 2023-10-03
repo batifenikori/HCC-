@@ -1,0 +1,132 @@
+body {
+    background-color: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+:root {
+    --pimary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104);
+}
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main-nav a {
+    background: var(--pimary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+#pay-container {
+    margin-left: 28rem;
+    background-color: #fff;
+    width: 35%;
+    padding: 20px;
+}
+
+.hand1 h1 {
+    margin-left: 19rem;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hand2 p {
+    font-size: 1rem;
+    background-color: #faf9f9;
+}
+
+.hand3 p {
+    font-size: 1rem;
+    background-color: #faf9f9;
+}
+
+.hand4 p{
+    font-size: 1rem;
+    margin-left: 25rem;
+    margin-top: -2.4rem;
+}
+.hand5 {
+    display: flex;
+    align-items: center;
+}
+.hand5 p {
+    font-size: 1rem;
+    margin-top: -0.02rem;
+    background-color: #faf9f9;
+}
+
+
+.pics{
+margin-left: 18vh;
+margin-top: -15px;
+background-color: #faf9f9;
+}
+
+.pics img{
+width: 80px;
+}
+
+/* Media Queries */
+/* @media (max-width: 700px) {
+    .top-container {
+        grid-template-areas:
+          'showcase showcase'
+          'top-box-a top-box-b';
+}
+
+.showcase h1 {
+    font-size: 2.5rem;
+}
+
+.main-nav ul {
+    grid-template-columns: 1fr;
+}
+
+.info {
+    grid-template-columns: 1fr;
+}
+
+.info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+ }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+      grid-template-areas:
+        'showcase'
+        'top-box-a'
+        'top-box-b'
+  }
+} */
+
+.form {
+    margin-left: 2px;
+}
+
+.form input {
+    width: 50%;
+}
+
+.selection {
+    margin-left: 12rem;
+}

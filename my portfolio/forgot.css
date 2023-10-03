@@ -1,0 +1,47 @@
+.top-box {
+    background-color: #bbb5b5;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box-a {
+    width: 10rem;
+    margin-left: 40rem;
+    margin-top: 10rem;
+}
+
+.top-box .price {
+    font-size: 2.5rem;
+}
+
+.btn {
+    background: #2b2929;
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background: url(pic111.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'showcase showcase top-box-a';
+}
